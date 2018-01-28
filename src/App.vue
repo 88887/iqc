@@ -1,7 +1,6 @@
 <template>
-  <div id="app">   
-    <main-menu></main-menu>
-  
+  <div id="app" class="app container-fluid">
+    <main-menu /> 
   </div>
 </template>
 
@@ -21,7 +20,7 @@ export default {
 @import "./shared/custom";
 @import "~bootstrap/scss/bootstrap";
 @import './node_modules/@progress/kendo-theme-bootstrap/scss/all';
-@import "./shared/iqc";
+@import "./components/dashboard";
 #app {
 
   .container {

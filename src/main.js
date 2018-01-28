@@ -11,6 +11,8 @@ import { TextBox ,MaskedTextBox,InputsInstaller} from '@progress/kendo-inputs-vu
 import { ButtonGroup, ButtonsInstaller } from '@progress/kendo-buttons-vue-wrapper'
 import { DataSource, DataSourceInstaller } from '@progress/kendo-datasource-vue-wrapper'
 import { Grid, GridInstaller } from '@progress/kendo-grid-vue-wrapper'
+import { Upload, UploadInstaller } from '@progress/kendo-upload-vue-wrapper'
+
 
 
 Vue.use(DateinputsInstaller)
@@ -18,6 +20,8 @@ Vue.use(InputsInstaller)
 Vue.use(ButtonsInstaller)
 Vue.use(GridInstaller)
 Vue.use(DataSourceInstaller)
+Vue.use(UploadInstaller)
+
 
 
 Vue.config.productionTip = false
@@ -33,7 +37,9 @@ new Vue({
     DataSource,
     Grid, 
     MaskedTextBox,
-    TextBox
+    TextBox,
+    Upload
+    
   },
   template: '<App/>'
 })

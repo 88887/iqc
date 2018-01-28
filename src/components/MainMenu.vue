@@ -3,7 +3,7 @@
         <div id="top-bar" class="top-bar col-xs-12 bg-inverse d-md-none"></div>
         <div id="nav"
             class="col-xs-3 bg-inverse text-white py-5 k-vbox"
-            v-if="this.$route.path.toLowerCase() !== '/signin'"
+            v-if="this.$route.path.toLowerCase() !== '/'"
             :class="{expand: navState}">
             <span id="nav-toggle" class="nav-toggle d-md-none" @click="navState = !navState">
                 <span class="k-icon k-i-hamburger"></span>
@@ -29,11 +29,7 @@
                     <router-link to="/signin" class="nav-link">Sign Out</router-link>
                 </li>
             </ul>
-            <hr class="k-flex" />
-            <div id="copy">
-                <p>Copyright &copy; {{year}},<br /><a href="http://www.progress.com">Progress Software Corporation</a> and/or its subsidiaries or affiliates.</p>
-                <p>All Rights Reserved.</p>
-            </div>
+        
         </div>
         <main class="col-xs p-4 py-5">
             <router-view></router-view>
@@ -53,3 +49,4 @@
     }
   }
   </script>
+

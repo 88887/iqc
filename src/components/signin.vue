@@ -26,7 +26,7 @@ export default {
   name: "signin",
   methods: {
     onLoginClick() {
-      this.$router.push("addReport");
+      this.$router.push("Dashboard");
     }
   }
 };
